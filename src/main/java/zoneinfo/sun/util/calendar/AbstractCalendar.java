@@ -23,10 +23,9 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
-import java.util.Locale;
-import com.redhat.openjdk.java.util.TimeZone;
+import zoneinfo.java.util.TimeZone;
 
 /**
  * The <code>AbstractCalendar</code> class provides a framework for

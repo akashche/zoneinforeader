@@ -34,7 +34,7 @@
  * to do so, delete this exception statement from your version.
  */
 
-package com.redhat.openjdk.support7;
+package zoneinfo.support7;
 
 import java.io.Closeable;
 import java.io.IOException;

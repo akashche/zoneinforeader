@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
 import  java.io.File;
 import  java.io.FileInputStream;
@@ -477,7 +477,7 @@ public class ZoneInfoFile {
         new PrivilegedAction<String>() {
             public String run() {
                 // todo: rename me back
-                String zi = System.getProperty("com.redhat.openjdk.java.home") +
+                String zi = System.getProperty("zoneinfo.java.home") +
                     File.separator + "lib" + File.separator + "zi";
 //                try {
 //                    zi = FileSystems.getDefault().getPath(zi).toRealPath().toString();

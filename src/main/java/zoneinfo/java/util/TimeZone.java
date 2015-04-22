@@ -36,7 +36,7 @@
  *
  */
 
-package com.redhat.openjdk.java.util;
+package zoneinfo.java.util;
 
 import java.io.Serializable;
 import java.lang.ref.SoftReference;
@@ -50,8 +50,8 @@ import java.util.concurrent.ConcurrentHashMap;
 import sun.misc.SharedSecrets;
 import sun.misc.JavaAWTAccess;
 import sun.security.action.GetPropertyAction;
-import com.redhat.openjdk.sun.util.calendar.ZoneInfo;
-import com.redhat.openjdk.sun.util.calendar.ZoneInfoFile;
+import zoneinfo.sun.util.calendar.ZoneInfo;
+import zoneinfo.sun.util.calendar.ZoneInfoFile;
 
 /**
  * <code>TimeZone</code> represents a time zone offset, and also figures out daylight

@@ -34,8 +34,7 @@
  * to do so, delete this exception statement from your version.
  */
 
-import com.redhat.openjdk.java.util.TimeZone;
-import com.redhat.openjdk.sun.util.calendar.ZoneInfoFile;
+import zoneinfo.java.util.TimeZone;
 import org.junit.Test;
 
 import java.io.File;
@@ -50,7 +49,7 @@ public class ZoneInfoFileTest {
     public void test() {
         File projectDir = codeSourceDir(ZoneInfoFileTest.class).getParentFile().getParentFile();
 //        System.out.println(new File(projectDir, "src/test/resources").getAbsolutePath());
-        System.setProperty("com.redhat.openjdk.java.home", new File(projectDir, "src/test/resources").getAbsolutePath());
+        System.setProperty("zoneinfo.java.home", new File(projectDir, "src/test/resources").getAbsolutePath());
 //        ZoneInfoFile.fireLoad();
 //        System.out.println(ZoneInfoFile.getVersion());
         System.out.println(TimeZone.getTimeZone("Europe/Dublin"));

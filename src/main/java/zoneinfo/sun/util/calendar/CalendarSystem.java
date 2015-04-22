@@ -23,16 +23,9 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
-import java.lang.reflect.Field;
-import java.util.HashMap;
-import java.util.Locale;
-import java.util.Map;
-import java.util.MissingResourceException;
-import java.util.ResourceBundle;
-import java.util.Set;
-import com.redhat.openjdk.java.util.TimeZone;
+import zoneinfo.java.util.TimeZone;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 

@@ -23,21 +23,20 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.security.AccessController;
-import java.security.PrivilegedAction;
 import java.security.PrivilegedActionException;
 import java.security.PrivilegedExceptionAction;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Properties;
 import java.util.StringTokenizer;
-import com.redhat.openjdk.java.util.TimeZone;
-import com.redhat.openjdk.support7.AutoCloseableUtils;
+import zoneinfo.java.util.TimeZone;
+import zoneinfo.support7.AutoCloseableUtils;
 
 /**
  *

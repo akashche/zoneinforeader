@@ -23,9 +23,9 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
-import com.redhat.openjdk.java.util.TimeZone;
+import zoneinfo.java.util.TimeZone;
 
 /**
  * Gregorian calendar implementation.

@@ -23,11 +23,11 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
 import java.lang.Cloneable;
 import java.util.Locale;
-import com.redhat.openjdk.java.util.TimeZone;
+import zoneinfo.java.util.TimeZone;
 
 /**
  * The <code>CalendarDate</code> class represents a specific instant

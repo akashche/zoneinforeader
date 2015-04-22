@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
 import java.io.IOException;
 import java.io.ObjectInputStream;
@@ -31,12 +31,11 @@ import java.lang.ref.SoftReference;
 import java.security.AccessController;
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 import java.util.SimpleTimeZone;
-import com.redhat.openjdk.java.util.TimeZone;
+import zoneinfo.java.util.TimeZone;
 
 /**
  * <code>ZoneInfo</code> is an implementation subclass of {@link

@@ -23,7 +23,7 @@
  * questions.
  */
 
-package com.redhat.openjdk.sun.util.calendar;
+package zoneinfo.sun.util.calendar;
 
 import java.util.Map;
 import java.util.HashMap;
