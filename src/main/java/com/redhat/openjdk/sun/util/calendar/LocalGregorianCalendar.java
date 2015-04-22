@@ -37,6 +37,7 @@ import java.util.List;
 import java.util.Properties;
 import java.util.StringTokenizer;
 import com.redhat.openjdk.java.util.TimeZone;
+import com.redhat.openjdk.support7.AutoCloseableUtils;
 
 /**
  *
@@ -127,8 +128,12 @@ public class LocalGregorianCalendar extends BaseCalendar {
             calendarProps = (Properties) AccessController.doPrivileged(new PrivilegedExceptionAction() {
                 public Object run() throws IOException {
                     Properties props = new Properties();
-                    try (FileInputStream fis = new FileInputStream(fname)) {
+                    FileInputStream fis = null;
+                    try {
+                        fis = new FileInputStream(fname);
                         props.load(fis);
+                    } finally {
+                        AutoCloseableUtils.closeQuietly(fis);
                     }
                     return props;
                 }

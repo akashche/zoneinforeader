@@ -50,7 +50,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import sun.misc.SharedSecrets;
 import sun.misc.JavaAWTAccess;
 import sun.security.action.GetPropertyAction;
-import sun.util.TimeZoneNameUtility;
 import com.redhat.openjdk.sun.util.calendar.ZoneInfo;
 import com.redhat.openjdk.sun.util.calendar.ZoneInfoFile;
 
@@ -325,7 +324,7 @@ abstract public class TimeZone implements Serializable, Cloneable {
      */
     public final String getDisplayName() {
         return getDisplayName(false, LONG,
-                              Locale.getDefault(Locale.Category.DISPLAY));
+                              Locale.getDefault());
     }
 
     /**
@@ -373,7 +372,7 @@ abstract public class TimeZone implements Serializable, Cloneable {
      */
     public final String getDisplayName(boolean daylight, int style) {
         return getDisplayName(daylight, style,
-                              Locale.getDefault(Locale.Category.DISPLAY));
+                              Locale.getDefault());
     }
 
     /**
@@ -451,15 +450,16 @@ abstract public class TimeZone implements Serializable, Cloneable {
                 if (names != null) {
                     return names;
                 }
-                names = TimeZoneNameUtility.retrieveDisplayNames(id, locale);
-                if (names != null) {
-                    perLocale.put(locale, names);
-                }
+//                names = TimeZoneNameUtility.retrieveDisplayNames(id, locale);
+//                if (names != null) {
+//                    perLocale.put(locale, names);
+//                }
                 return names;
             }
         }
 
-        String[] names = TimeZoneNameUtility.retrieveDisplayNames(id, locale);
+//        String[] names = TimeZoneNameUtility.retrieveDisplayNames(id, locale);
+        String[] names = null;
         if (names != null) {
             Map<Locale, String[]> perLocale = new ConcurrentHashMap<Locale, String[]>();
             perLocale.put(locale, names);
