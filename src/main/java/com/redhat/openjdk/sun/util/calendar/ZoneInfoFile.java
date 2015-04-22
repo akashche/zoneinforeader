@@ -476,7 +476,8 @@ public class ZoneInfoFile {
     private static final String ziDir = AccessController.doPrivileged(
         new PrivilegedAction<String>() {
             public String run() {
-                String zi = System.getProperty("java.home") +
+                // todo: rename me back
+                String zi = System.getProperty("com.redhat.openjdk.java.home") +
                     File.separator + "lib" + File.separator + "zi";
 //                try {
 //                    zi = FileSystems.getDefault().getPath(zi).toRealPath().toString();
